@@ -195,3 +195,7 @@ anydo.commit()
     console.error(error)
   })
 ```
+
+## Known issues
+
+* For some unknown reason, when in the title of a task we use special characters such as: á, é, í, ó, ú, ñ ... The server responds with a 500 error. To solve this, we must clean the string to eliminate the troublesome characters.
