@@ -1,5 +1,6 @@
 declare class Task {
     private options;
+    private ABC;
     constructor();
     private _getRandomValue;
     private _genTaskId;

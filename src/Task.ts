@@ -34,8 +34,7 @@ class Task {
     return Buffer.from(id)
         .toString('base64')
         .replace(/\//g, '_')
-        .replace(/\+/g, '-')
-        .slice(-24);
+        .replace(/\+/g, '-');
   }
   /**
    * Add options
