@@ -1,6 +1,6 @@
 {
   "name": "anydo-tasker",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1-beta.4",
   "description": "Unofficial and simple Any.do api for node",
   "main": "./lib/Anydo.js",
   "homepage": "https://github.com/danitetus/anydo-tasker",

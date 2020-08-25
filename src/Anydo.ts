@@ -190,7 +190,7 @@ class Anydo {
     let syncData: any;
     try {
       syncData = await this._post(
-          `/api/v2/me/sync?updatedSince=${options.updateSince}`,
+          `/api/v5/me/sync?updatedSince=${options.updateSince}`,
           {models: options.models},
           'POST',
       );
