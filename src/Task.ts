@@ -3,6 +3,8 @@
  */
 class Task {
   private options: any = {}
+  // eslint-disable-next-line max-len
+  private ABC: string = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
 
   /**
    * Instantiate the task and assing a random id
@@ -17,7 +19,7 @@ class Task {
    * @return {number}
    */
   private _getRandomValue(): number {
-    return Math.floor(Math.random() * 256);
+    return Math.floor(Math.random() * this.ABC.length);
   }
   /**
    * Generates an Any.do id task
@@ -26,7 +28,7 @@ class Task {
   private _genTaskId(): string {
     let id = '';
     for (let n = 0; n < 16; n++) {
-      id += String.fromCharCode(this._getRandomValue());
+      id += this.ABC.charAt(this._getRandomValue());
     }
 
     return Buffer.from(id)
