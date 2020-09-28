@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/danitetus/anydo-tasker/badge)](https://www.codefactor.io/repository/github/danitetus/anydo-tasker)
+
 # Anydo tasker
 
 ## Unofficial api library for Any.do
